@@ -29,8 +29,15 @@ Run below in terminal to ensure presence of [Node.js](https://nodejs.org/)
 * This method runs the entire test suite in the background (headless mode).
 * After the run completes, you launch a static HTML report to review pass/fail statuses, error logs, and screenshots of any failures.
     Terminal Commands:
-    - npm run test
-    - npx playwright show-report
+    1. npm run test
+      Terminal Output: <img width="948" height="173" alt="image" src="https://github.com/user-attachments/assets/d01b0f19-9423-4342-b878-3651b27535cd" />
+
+    2. npx playwright show-report
+       A report html page will be opened on browser
+      <img width="1011" height="330" alt="image" src="https://github.com/user-attachments/assets/350adff5-c7e8-49d7-bfc7-12d6f752ab66" />
+      r<img width="1011" height="558" alt="image" src="https://github.com/user-attachments/assets/7fae9778-2147-462b-b825-da3a83fe449d" />
+
+
 
 
 ## Method 2 - Playback (Interactive UI Mode)
