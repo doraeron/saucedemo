@@ -24,21 +24,21 @@ Run below in terminal to ensure presence of [Node.js](https://nodejs.org/)
     npm install
 4. Install Playwright browsers: This step downloads the required Chromium, Firefox, and WebKit binaries.
    ```bash
-    npx playwright install  
-
+    npx playwright install
 
 ## Execution & Debugging Instructions
-### Method 1 - Test Report (Standard Execution -- as provided sample)
+### Method 1 - Test Report (Standard Execution)
 * This method runs the entire test suite in the background (headless mode).
-* After the run completes, you launch a static HTML report to review pass/fail statuses, error logs, and screenshots of any failures.
-    Terminal Commands:
-    1. npm run test
-      Terminal Output: <img width="948" height="173" alt="image" src="https://github.com/user-attachments/assets/d01b0f19-9423-4342-b878-3651b27535cd" />
-
-    2. npx playwright show-report
-       A report html page will be opened on browser
-      <img width="1011" height="330" alt="image" src="https://github.com/user-attachments/assets/350adff5-c7e8-49d7-bfc7-12d6f752ab66" />
-      r<img width="1011" height="558" alt="image" src="https://github.com/user-attachments/assets/7fae9778-2147-462b-b825-da3a83fe449d" />
+* After the run completes, a static HTML report will be launched to review pass/fail statuses, error logs, and screenshots of any failures.
+   ```bash
+   npm run test
+   npx playwright show-report
+1. Terminal Output: <img width="948" height="173" alt="image" src="https://github.com/user-attachments/assets/d01b0f19-9423-4342-b878-3651b27535cd" />
+2. Browser HTML Report:
+<img width="1011" height="330" alt="image" src="https://github.com/user-attachments/assets/350adff5-c7e8-49d7-bfc7-12d6f752ab66" />
+<img width="1011" height="558" alt="image" src="https://github.com/user-attachments/assets/7fae9778-2147-462b-b825-da3a83fe449d" />
+3. A folder named [playwright-report] will be created and the HTML report will be saved and retrievable.
+<img width="718" height="41" alt="image" src="https://github.com/user-attachments/assets/c8e0fda4-d50e-45bd-8961-9394dcc039f3" />
 
 ### Method 2 - Playback (Interactive UI Mode)
 * This method launches Playwright's built-in interactive UI window.
