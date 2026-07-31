@@ -1,6 +1,6 @@
 ## Framework Overview
 This repository contains a robust UI automation framework built with **Playwright** and **TypeScript**. 
-It is designed to test the core e-commerce workflows of [SauceDemo](https://www.saucedemo.com). 
+It is designed to test the core e-commerce workflows of [SauceDemo](https://www.saucedemo.com) with different account type scenarios.
 
 The framework follows the POM design pattern to ensure high maintainability and reusability; Test logic is decoupled from UI locators, and test data is isolated into dedicated JSON files. It includes built-in capabilities for parallel execution, automatic retries on CI, failure screenshots, and comprehensive HTML reporting.
 
