@@ -2,7 +2,13 @@
 This repository contains a robust UI automation framework built with **Playwright** and **TypeScript**. 
 It is designed to test the core e-commerce workflows of [SauceDemo](https://www.saucedemo.com) with different account type scenarios.
 
-The framework follows the POM design pattern to ensure high maintainability and reusability; Test logic is decoupled from UI locators, and test data is isolated into dedicated JSON files. It includes built-in capabilities for parallel execution, automatic retries on CI, failure screenshots, and comprehensive HTML reporting.
+The framework follows the POM design pattern to ensure high maintainability and reusability; 
+Test logic is decoupled from UI locators, and test data is isolated into dedicated JSON files. 
+The main flow includes:
+1. Built-in capabilities for parallel execution
+2. Automatic retries on CI
+3. Failure screenshots
+4. Comprehensive HTML reporting.
 
 ## Folder Structure
 * `tests/`: Contains the actual test specifications (e.g., `saucedemo.spec.ts`). These files manage the test flow, utilize Page Objects, and execute assertions.
@@ -51,5 +57,5 @@ Run below in terminal to ensure presence of [Node.js](https://nodejs.org/)
     
 ## Continuous Integration (CI/CD)
 This repository includes a GitHub Actions workflow located at `.github/workflows/playwright.yml`. 
-* **Automated Execution:** Every time code is pushed or a pull request is opened, GitHub automatically provisions a clean environment, installs Node.js dependencies and Playwright browsers, and runs the entire test suite.
+* **Automated Execution:** GitHub automatically provisions a clean environment, installs Node.js dependencies and Playwright browsers, and runs the entire test suite, each time code is pushed or a pull request is opened.
 * **Artifact Storage:** Test reports and execution artifacts are automatically packaged and stored on every run.
