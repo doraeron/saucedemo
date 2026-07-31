@@ -55,6 +55,6 @@ Run below in terminal to ensure presence of [Node.js](https://nodejs.org/)
 
     
 ## Continuous Integration (CI/CD)
-This repository includes a GitHub Actions workflow located at `.github/workflows/playwright.yml`. 
+This repository includes a GitHub Actions workflow located at `.github/workflows/playwright.yml`. -- Enables workflows in Action tab
 * **Automated Execution:** GitHub automatically provisions a clean environment, installs Node.js dependencies and Playwright browsers, and runs the entire test suite, each time code is pushed or a pull request is opened.
 * **Artifact Storage:** Test reports and execution artifacts are automatically packaged and stored on every run.
