@@ -28,7 +28,7 @@ test.describe('Login & Core Flow Tests', () => {
     await loginPage.login(testData.validUser.username, testData.validUser.password);
     await inventoryPage.verifyIsDisplayed();
 
-    // add random and store name for verification in cart
+    // add random product available on page -> store name for verification in cart later
     const addedProductName = await inventoryPage.addRandomProductToCart();
     await inventoryPage.goToCart();
     
@@ -36,7 +36,7 @@ test.describe('Login & Core Flow Tests', () => {
     const cartItems = await cartPage.getCartItemNames();
     expect(cartItems).toContain(addedProductName);
 
-    // Check out
+    // Check out with filling in preset data from testData.json
     await cartPage.proceedToCheckout();
     await checkoutPage.fillInformation(
       testData.checkout.firstName,
