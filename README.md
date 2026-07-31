@@ -6,9 +6,8 @@ The framework follows the POM design pattern to ensure high maintainability and 
 Test logic is decoupled from UI locators, and test data is isolated into dedicated JSON files. 
 The main flow includes:
 1. Built-in capabilities for parallel execution
-2. Automatic retries on CI
-3. Failure screenshots
-4. Comprehensive HTML reporting.
+2. Automatic retries on CI & Failure screenshots - setup in `playwright.config.ts` , parse to `test-results`
+4. Comprehensive HTML reporting
 
 ## Folder Structure
 * `tests/`: Contains the actual test specifications (e.g., `saucedemo.spec.ts`). These files manage the test flow, utilize Page Objects, and execute assertions.
