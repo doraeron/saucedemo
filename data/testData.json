@@ -1,0 +1,31 @@
+
+{
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce"
+  },
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce"
+  },
+  "product": {
+    "name": "Sauce Labs Backpack",
+    "id": "add-to-cart-sauce-labs-backpack"
+  },
+  "checkout": {
+    "firstName": "Sharon",
+    "lastName": "Ng",
+    "zipCode": "58000"
+  },
+  "messages": {
+    "lockedOutError": "Epic sadface: Sorry, this user has been locked out.",
+    "invalidCredentialsError": "Epic sadface: Username and password do not match any user in this service",
+
+    "checkoutComplete": "Thank you for your order!"
+    
+  }
+}
